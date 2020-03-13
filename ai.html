@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>인공지능</title>
+
+  <meta name=" viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+
+  <link rel="stylesheet" href="./static/css/base-large.css">
+  <link rel="stylesheet" media="(max-width: 980px)" href="./static/css/base-small.css">
+
+  <link rel="stylesheet" href="./static/css/part2-large.css">
+  <link rel="stylesheet" media="(max-width: 980px)" href="./static/css/part2-small.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean"
+    rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" defer src="./static/js/base.js"></script>
+  <script type="text/javascript" defer src="./static/js/p3-ch2-s2-ai.js"></script>
+</head>
+
+<body>
+  <div class="body__container">
+    <!-- HEADER -->
+    <header>
+      <!-- FIRST ROW - HAMBURGER BUTTON, LOGO BUTTON, TRANSPARENT BUTTON -->
+      <div class="gnb-first_row">
+        <!-- 1.1.1. hamburger_button-large_css -->
+        <button type="button" id="first_row-hamburger_button-large_css" class="hamburger">
+          <img src="./static/img/base/hamburger_button.svg" alt="햄버거 버튼">
+        </button>
+        <div class="sub-menu hide">
+          <div class="inner">
+            <ul class="group">
+              <li class="part-0">
+
+                <p class="title">INTRO</p>
+
+                <ul>
+                  <div class="mass-introduction">
+                    <li><a href="#" class="title-second" onclick="">Vision</a></li>
+                    <li><a href="#" class="title-second" onclick="">Curriculum</a></li>
+                  </div>
+                </ul>
+
+              </li>
+              <li class="part-1">
+
+                <p class="title" style="text-align: center;">이론</p>
+                <ul>
+                  <div class="mass">
+                    <div class="sub-mass">
+                      <li class="underline"><a class="title-second" href="#" onclick="">언어</a></li>
+                      <div class="title-third">
+                        <ul>
+                          <li><a href="#">unmanaged</a></li>
+                          <li><a href="#">managed</a></li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="sub-mass">
+
+                      <li class="underline"><a class="title-second" href="../step2-child/step2-child.html"
+                          onclick="">데이터베이스</a></li>
+
+
+                    </div>
+                    <div class="sub-mass">
+                      <li class="underline"><a class="title-second" href="../step3-student/step3-student.html"
+                          onclick="">운영체제</a></li>
+
+                    </div>
+                    <div class="sub-mass">
+
+                      <li class="underline"><a class="title-second" href="../step4-adult/step4-adult.html"
+                          onclick="">기타</a></li>
+
+                      <div class="title-third">
+                        <ul>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+
+              </li>
+              <li class="part-2">
+
+                <p class="title">활용</p>
+                <ul>
+                  <div class="mass">
+                    <div class="sub-mass">
+
+                      <li class="underline"><a class="title-second" href="#" onclick="">웹</a></li>
+
+                      <div class="title-third">
+                        <ul>
+                          <li><a href="#">프론트엔드</a></li>
+                          <div class="title-fourth">
+                            <ul>
+                              <li><a href="#">html</a></li>
+                              <li><a href="#">css</a></li>
+                              <li><a href="#">javascript</a></li>
+                            </ul>
+                            <li><a href="#">백엔드</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-mass">
+
+                      <li class="underline"><a class="title-second" href="#" onclick="">인공지능</a></li>
+
+                      <div class="title-third">
+                        <ul>
+                          <li><a href="#">SUPERVISED learning</a></li>
+                          <li><a href="#">UNSUPERVISED learning</a></li>
+                          <li><a href="#">REINFORCEMENT learning</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 1.1.2. hamburger_button-small_css -->
+        <div class="sample-area sample-class">
+          <div class="head">
+            <div class="btn-menu">
+              <img class="fas fa-bars" id="hamburger_button" src="./static/img/base/hamburger_button.svg"
+                alt="hamburger_button-small_css">
+            </div>
+          </div>
+          <div class="side-menu">
+            <div class="menu-body">
+              <div>
+                <ul class="hamburger_topic">
+                  <li class="hamburger_topic-first">INTRO</li>
+                  <ul class="hamburger_topic-second">
+                    <li>Vision</li>
+                    <li>Curriculum</li>
+                  </ul>
+                </ul>
+                <ul class="hamburger_topic">
+                  <li class="hamburger_topic-first">이론</li>
+                  <ul class="hamburger_topic-second">
+                    <li><a href="../step1-baby/step1-baby.html">언어</a></li>
+                    <li><a href="../step2-child/step2-child.html">데이터베이스</a></li>
+                    <li><a href="../step3-student/step3-student.html">운영체제</a></li>
+                    <li><a href="../step4-adult/step4-adult.html">기타</a></li>
+                  </ul>
+                </ul>
+                <ul class="hamburger_topic">
+                  <li class="hamburger_topic-first">활용</li>
+                  <ul class="hamburger_topic-second">
+                    <li>웹</li>
+                    <li>인공지능</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 1.2. logo button -->
+        <div>
+          <a href="#">
+            <img id="logo_button" src="./static/img/base/logo-w.svg" alt="로고 버튼">
+          </a>
+        </div>
+        <!-- 1.3. transparent button -->
+        <div>
+          <img src="./static/img/base/transparent_squre.png" alt="투명 버튼">
+        </div>
+      </div>
+
+      <!-- SECOND ROW - TOPIC BUTTON -->
+      <div class="gnb-second_row">
+        <div class="topic_button">
+          <!-- NAVIGATION -->
+          <div class="topic-class">
+            <div class="head">
+              <div class="topic-menu">
+                <img class="fas fa-bars" id="topic_button" src="./static/img/base/t-button.svg"
+                  alt="t(opic) 버튼">
+              </div>
+            </div>
+            <div class="side-menu">
+              <div class="topic-menu" id="opic">
+                <img id="opic_image" src="./static/img/base/opic-button.svg" alt="(t)opic 버튼">
+              </div>
+              <div class="menu-body">
+                <ul>
+                  <div class="second--title">
+                    <li>인공지능</li>
+                  </div>
+                  <ul class="third--title">
+                    <div class="third--title-height">
+                      <li>Ⅰ. SUPERVISED learning</li>
+                      <ul class="fourth--title">
+                        <li>1. linear regression</li>
+                        <li>2. logistic regression</li>
+                        <li>3. neural network</li>
+                      </ul>
+                    </div>
+                    <div class="third--title-height">
+                      <li>Ⅱ. UNSUPERVISED learning</li>
+                    </div>
+                    <div class="third--title-height">
+                      <li>Ⅲ. REINFORCEMENT learning</li>
+                      <ul class="fourth--title">
+                      </ul>
+                    </div>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <!-- SECTION -->
+    <main>
+      <!-- SECTION1 -->
+      <div class="title-background">
+        <div class="title-door">인공지능</div>
+      </div>
+      <div class="section">
+      </div>
+
+      <!-- SECTION2 -->
+      <div class="section-two">
+        <div class="context-two">
+          <h1>Ⅰ. SUPERVISED learning</h1>
+          <h2>0. 기본</h2>
+          <p>
+            m개의 데이터 세트 하나를 받으면
+            θ 한 개에 따른 cost 값이 여러 개 생겨서 그래프로 나온다.
+          </p>
+
+          <h2>1. linear regression</h2>
+          <p>
+            구해야하는 θ가 1개이고 데이터 세트가 1개여도, cost function은 2차함수를 그린다.
+            데이터 세트가 많아질 수록 2차함수의 모양이 바뀔 뿐이다. cost function의 cost가 커진다.
+            패널티를 주는 대상이 많아지는 것이다.
+            데이터 세트가 한 개(x값 1개, y값 1개)이면 처벌을 할 놈이 하나 밖에 없는 것이고,
+            데이터 세트가 여러 개이면 처벌을 여러놈이 하니까 자연스레 cost는 커질 수 밖에 없다.
+          </p>
+          <h3>step1. hypothesis</h3>
+          <p>
+            선형 회귀의 가설은 다음과 같다.
+          </p>
+          <img class="equa_size"
+            src="./static/img/ai/supervised learning/linear_regression-step1-hypothesis.svg" alt="">
+            <button id="button-linear-step1-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
+            <div id="div-linear-step1-matrix" class="disp-none border-basic size-6 pad-10">    
+              <div class="scroll">
+                <img class="equa_size-matrix5" src="./static/img/ai/supervised learning/linear-step1-matrix.svg" alt="h_{\theta}(x)=\begin{bmatrix}
+                \theta_{0}&
+                \theta_{1}&
+                \theta_{2}&
+                \cdots&
+                \theta_{n}
+                \end{bmatrix}
+                \begin{bmatrix}
+                x_{0}\\
+                x_{1}\\
+                x_{2}\\
+                \vdots\\
+                x_{n}
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                \theta_{0}x_{0}+
+                \theta_{1}x_{1}+
+                \theta_{2}x_{2}+
+                \cdots+
+                \theta_{n}x_{n}
+                \end{bmatrix}">
+              </div>
+            </div>
+            <br><br>
+          <h3>step2. cost function</h3>
+          <img class="equa_size-sigma"
+            src="./static/img/ai/supervised learning/linear_regression-step2-cost_function.svg"
+            alt="J(\theta )=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta }(x^{(i)})-y^{(i)})^2">
+          <button id="button-linear-step2-matrix" class="disp-block margin-b10">행렬로 나타내기 ···</button>
+          <div id="div-linear-step2-matrix" class="pad-10 border-basic disp-none size-auto">
+            <img class="equa_size-frac"
+              src="./static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix.svg"
+              alt="J(\Theta)=\frac{1}{2m}(X\theta-\vec{y})^{T}(X\theta-\vec{y})"><br>
+            <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/ingredient-matrix_x.svg"
+              alt="X=\begin{bmatrix}
+              x_{0}^{(1)} & x_{1}^{(1)} & \cdots & x_{n}^{(1)}\\ 
+              x_{0}^{(2)} & x_{1}^{(2)} & \cdots & x_{n}^{(2)}\\ 
+                &  & \vdots  & \\ 
+              x_{0}^{(m)} & x_{1}^{(m)} & \cdots & x_{n}^{(m)}
+              \end{bmatrix}">
+            <img class="equa_size-matrix4"
+              src="./static/img/ai/supervised learning/ingredient-matrix_theta.svg" alt="\theta = \begin{bmatrix}
+              \theta_{0} \\ 
+              \theta_{1}\\ 
+              \vdots \\ 
+              \theta_{n}\\ 
+              
+              \end{bmatrix}">
+            <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/ingredient-matrix_y.svg"
+              alt="\vec{y}=\begin{bmatrix}
+              y^{(1)}\\ 
+              y^{(2)}\\ 
+              \vdots \\ 
+              y^{(m)}
+              
+              \end{bmatrix}"><br>
+
+              <img class="equa_size-matrix4"
+                src="./static/img/ai/supervised learning/ingredient-matrix_thetax.svg" alt="X\theta=\begin{bmatrix}
+              x_{0}^{(1)}\theta_{0} + x_{1}^{(1)}\theta_{1} + \cdots + x_{n}^{(1)}\theta_{n}\\ 
+              x_{0}^{(2)}\theta_{0} + x_{1}^{(2)}\theta_{1} + \cdots + x_{n}^{(2)}\theta_{n}\\ 
+              \vdots\\
+              x_{0}^{(m)}\theta_{0} + x_{1}^{(m)}\theta_{1} + \cdots + x_{n}^{(m)}\theta_{n}\\ 
+              \end{bmatrix}">
+            <div class="scroll">
+              <img class="equa_size-matrix4"
+                src="./static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix1.svg"
+                alt="J(\Theta)=\frac{1}{2m}\begin{bmatrix}
+                x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)}\\ 
+                x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)}\\ 
+                \vdots\\ 
+                x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}\\
+      
+                \end{bmatrix}^T\begin{bmatrix}
+                x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)}\\ 
+                x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)}\\ 
+                \vdots\\ 
+                x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}\\
+      
+                \end{bmatrix}">
+            </div>
+            <div class="scroll">
+              <img class="equa_size-matrix4"
+                src="./static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix2.svg"
+                alt="J(\Theta)=\frac{1}{2m}\begin{bmatrix}
+                  x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)} &  x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)} & \cdots & x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}
+                  \end{bmatrix}\begin{bmatrix}
+                            x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)}\\ 
+                            x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)}\\ 
+                            \vdots\\ 
+                            x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}\\
+                  
+                            \end{bmatrix}">
+            </div>
+            <div class="scroll">
+              <img class="equa_size-frac"
+                src="./static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix3.svg"
+                alt="">
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <h3>step3. minimize costfuction</h3>
+          <img class="equa_size-partial"
+            src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function1.svg"
+            alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}J(\theta)"><br>
+          <img class="equa_size-sigma"
+            src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2.svg"
+            alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2"><br>
+          <button id="button-linear-step3-proof" class="disp-block margin-b10">증명···</button>
+          <div id="div-linear-step3-proof" class="disp-none border-basic pad-10 size-auto">
+            <img class="equa_size-sigma"
+              src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_1.svg"
+              alt="\frac{\partial }{\partial \theta_{j}}\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2"><br>
+              <div class="scroll">
+                <img class="equa_size-partial"
+                src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_2.svg"
+                alt="=\frac{\partial}{\partial\theta_{j}}\frac{1}{2m}\{
+                  (h_\theta(x^{(1)})-y^{(1)})^2
+                  +(h_\theta(x^{(2)})-y^{(2)})^2
+                  +\cdots
+                  +(h_\theta(x^{(m)})-y^{(m)})^2\}">
+              </div>
+                <div class="scroll">
+                  <img class="equa_size-partial"
+                src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_3.svg"
+                alt="=\frac{\partial}{\partial\theta_{j}}\frac{1}{2m}\{
+                  (\theta_{0}x_{0}^{(1)}+\theta_{1}x_{1}^{(1)}+\cdots+\theta_{j}x_{j}^{(1)}+\cdots+\theta_{n}x_{n}^{(1)}-y^{(1)})^2+
+                  (\theta_{0}x_{0}^{(2)}+\theta_{1}x_{1}^{(2)}+\cdots+\theta_{j}x_{j}^{(2)}+\cdots+\theta_{n}x_{n}^{(2)}-y^{(2)})^2+
+                  \cdots+
+                  (\theta_{0}x_{0}^{(m)}+\theta_{1}x_{1}^{(m)}+\cdots+\theta_{j}x_{j}^{(m)}+\cdots+\theta_{n}x_{n}^{(m)}-y^{(m)})^2
+                  \}"><br>
+                </div>
+                  <div class="scroll">
+                    <img class="equa_size-frac"
+                    src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_4.svg"
+                    alt="=\frac{1}{2m}\{
+                      2(\theta_{0}x_{0}^{(1)}+\theta_{1}x_{1}^{(1)}+\cdots+\theta_{j}x_{j}^{(1)}+\cdots+\theta_{n}x_{n}^{(1)}-y^{(1)})\cdot x_{j}^{(1)}+
+                      2(\theta_{0}x_{0}^{(2)}+\theta_{1}x_{1}^{(2)}+\cdots+\theta_{j}x_{j}^{(2)}+\cdots+\theta_{n}x_{n}^{(2)}-y^{(2)})\cdot x_{j}^{(2)}+
+                      \cdots+
+                      2(\theta_{0}x_{0}^{(m)}+\theta_{1}x_{1}^{(m)}+\cdots+\theta_{j}x_{j}^{(m)}+\cdots+\theta_{n}x_{n}^{(m)}-y^{(m)})\cdot x_{j}^{(m)}
+                      \}">
+                  </div>
+                  <div class="scroll">
+                    <img class="equa_size-frac"
+                      src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_5.svg"
+                      alt="=\frac{1}{m}\{
+                        (\theta_{0}x_{0}^{(1)}+\theta_{1}x_{1}^{(1)}+\cdots+\theta_{j}x_{j}^{(1)}+\cdots+\theta_{n}x_{n}^{(1)}-y^{(1)})\cdot x_{j}^{(1)}+
+                        (\theta_{0}x_{0}^{(2)}+\theta_{1}x_{1}^{(2)}+\cdots+\theta_{j}x_{j}^{(2)}+\cdots+\theta_{n}x_{n}^{(2)}-y^{(2)})\cdot x_{j}^{(2)}+
+                        \cdots+
+                        (\theta_{0}x_{0}^{(m)}+\theta_{1}x_{1}^{(m)}+\cdots+\theta_{j}x_{j}^{(m)}+\cdots+\theta_{n}x_{n}^{(m)}-y^{(m)})\cdot x_{j}^{(m)}
+                        \}">
+                  </div>
+                  <img class="equa_size-sigma"
+                  src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_6.svg"
+                  alt="=\frac{1}{m}\sum_{i=1}^{m}
+                  (h_\theta(x^{(i)})-y^{(i)})\cdot x_{j}^{(i)}">
+                
+          </div>
+          <img class="equa_size-sigma"
+            src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3.svg"
+            alt="\theta _{j}:= \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{j}^{(i)}">
+            <button id="button-linear-step3-range" class="disp-block margin-b10">정리···</button>
+            <div id="div-linear-step3-range" class="disp-none border-basic size-3 pad-10">
+              <img class="equa_size-sigma"
+              src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_0.svg"
+              alt="\theta _{0}:= \theta_{0} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{0}^{(i)}"><br>
+              <img class="equa_size-sigma"
+              src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_1.svg"
+              alt="\theta _{1}:= \theta_{1} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{1}^{(i)}"><br>
+              <img class="margin-l100" src="./static/img/ai/supervised learning/vdots.svg" alt="\vdots"><br>
+              <img class="equa_size-sigma"
+              src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_n.svg"
+              alt="\theta _{n}:= \theta_{n} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{n}^{(i)}">
+            </div>
+            <button id="button-linear-step3-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
+            <div id="div-linear-step3-matrix" class="disp-none border-basic size-auto pad-10">    
+              <div class="scroll">
+                <img class="equa_size" src="./static/img/ai/supervised learning/linear-step3-matrix0.svg" alt="\theta:=\theta-\alpha\bigtriangledown J(\theta)">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-30" src="./static/img/ai/supervised learning/linear-step3-matrix1.svg" alt="\bigtriangledown J(\theta)=
+                \begin{bmatrix}
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \vdots\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \end{bmatrix}
+                ">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="./static/img/ai/supervised learning/linear-step3-matrix2.svg" alt="\frac{\partial J(\theta)}{\partial \theta_{j}}=\frac{1}{m}\vec{x_{j}}(X\theta-\vec{y})
+                ">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-12" src="./static/img/ai/supervised learning/linear-step3-matrix3.svg" alt="">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-3" src="./static/img/ai/supervised learning/linear-step3-matrix4.svg" alt="=\frac{1}{m}\begin{bmatrix}
+                x_{j}^{(1)}(x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                x_{j}^{(2)}(x_{0}^{(2)}\theta_{0}+x_{2}^{(1)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                \cdots+
+                x_{j}^{(m)}(x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \end{bmatrix}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-15" src="./static/img/ai/supervised learning/linear-step3-matrix5.svg" alt="\bigtriangledown J(\theta)=
+                \begin{bmatrix}
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \vdots\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \end{bmatrix}
+=\frac{1}{m}
+\begin{bmatrix}
+x_{0}^{(1)} & x_{0}^{(2)} & \cdots & x_{0}^{(m)}\\
+x_{1}^{(1)} & x_{1}^{(2)} & \cdots & x_{1}^{(m)}\\
+\vdots & \vdots & \cdots  & \vdots\\
+x_{n}^{(1)} & x_{n}^{(2)} & \cdots & x_{n}^{(m)}\\
+\end{bmatrix}
+
+\begin{bmatrix}
+x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)}\\
+x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)}\\
+\vdots\\
+x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}\\
+\end{bmatrix}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-15" src="./static/img/ai/supervised learning/linear-step3-matrix6.svg" alt="=\frac{1}{m}
+                \begin{bmatrix}
+                x_{0}^{(1)}
+                (x_{0}^{(1)}\theta_{0}+
+                x_{1}^{(1)}\theta_{1}+
+                x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                
+                x_{0}^{(2)}
+                (x_{0}^{(2)}\theta_{0}+
+                x_{1}^{(2)}\theta_{1}+
+                \cdots+
+                x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                
+                \cdots+
+                
+                x_{0}^{(m)}
+                (x_{0}^{(m)}\theta_{0}+
+                x_{1}^{(m)}\theta_{1}+
+                \cdots+
+                x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \\
+                
+                x_{1}^{(1)}
+                (x_{0}^{(1)}\theta_{0}+
+                x_{1}^{(1)}\theta_{1}+
+                x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                
+                x_{1}^{(2)}
+                (x_{0}^{(2)}\theta_{0}+
+                x_{1}^{(2)}\theta_{1}+
+                \cdots+
+                x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                
+                \cdots+
+                
+                x_{1}^{(m)}
+                (x_{0}^{(m)}\theta_{0}+
+                x_{1}^{(m)}\theta_{1}+
+                \cdots+
+                x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \\
+                \vdots
+                \\
+                
+                x_{n}^{(1)}
+                (x_{0}^{(1)}\theta_{0}+
+                x_{1}^{(1)}\theta_{1}+
+                x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                
+                x_{n}^{(2)}
+                (x_{0}^{(2)}\theta_{0}+
+                x_{1}^{(2)}\theta_{1}+
+                \cdots+
+                x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                
+                \cdots+
+                
+                x_{n}^{(m)}
+                (x_{0}^{(m)}\theta_{0}+
+                x_{1}^{(m)}\theta_{1}+
+                \cdots+
+                x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \\
+                \end{bmatrix}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-15" src="./static/img/ai/supervised learning/linear-step3-matrix7.svg" alt="\theta:=\theta-\frac{\alpha}{m}X^{T}(X\theta-\vec{y})">
+              </div>
+            </div>
+            <p>
+              미분해서 나온 기울기는 양수가 될 수도, 음수가 될 수도 있다. 
+              즉, 어느 방향으로도 움직일 수 있다는 것이다.
+              그러므로 기울기값이 cost function을 최소로 만드는 지점으로의 방향을 알려주는 것이다.
+            </p>
+            <p>
+              그리고 learning rate인 알파값은 cost function의 최소지점을 향해 가는 걸음의 크기를 결정한다.
+              성큼성큼 걸어서 갈지, 살금살금 걸어서 갈지를 결정해준다.
+            </p>
+            <br><br>
+
+          <h2>2. logistic regression</h2>
+          <p>
+            logistic regression을 이용하면 분류하는 문제를 해결할 수 있다.
+            예를 들어 특정 병에 결렸는지 안 걸렸는지, 특정 인물이 안경을 썼는지, 안 썼는지를 구분할 수 있게된다.
+          </p>
+          <h3>step1. hypothesis</h3>
+          
+          <img src="./static/img/ai/supervised learning/logistic-step1.svg" alt="h_{\theta}(x)=g(\theta_{0}+\theta_{1}x_{1}+\theta_{2}x_{2}+\cdots+\theta_{n}x_{n})"><br>
+          <img src="./static/img/ai/supervised learning/logistic-function.svg" alt="g(z)=\frac{1}{1+e^{-z}}">
+          <p>
+            logistic이라고 불리는 함수를 우리가 알고 있는 linear regression식에 씌워서 출력값을 0에서 1사이에 들어오게끔 조정하는 것이다.
+            그렇게 되면 0 아니면 1에 가까운 두 가지 경우만 출력되므로, 결과값이 이산적인 값을 다루는 형태를 띄게 된다.
+            그래서 연속적인 값을 추측하는 linear regression문제와는 차이를 가지게 된다.
+          </p>
+          <button id="button-logistic-step1-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
+            <div id="div-logistic-step1-matrix" class="disp-none border-basic size-w7 pad-10">    
+              <img src="./static/img/ai/supervised learning/logistic-step1-matrix.svg" alt="h=g(X\theta)=g(\begin{bmatrix}
+              x_{0}^{(1)}\theta_{0} + x_{1}^{(1)}\theta_{1} + \cdots + x_{n}^{(1)}\theta_{n}\\ 
+              x_{0}^{(2)}\theta_{0} + x_{1}^{(2)}\theta_{1} + \cdots + x_{n}^{(2)}\theta_{n}\\ 
+              \vdots\\
+              x_{0}^{(m)}\theta_{0} + x_{1}^{(m)}\theta_{1} + \cdots + x_{n}^{(m)}\theta_{n}\\ 
+              \end{bmatrix})=
+\begin{bmatrix}
+              g(x_{0}^{(1)}\theta_{0} + x_{1}^{(1)}\theta_{1} +
+ \cdots + x_{n}^{(1)}\theta_{n})\\ 
+
+              g(x_{0}^{(2)}\theta_{0} + x_{1}^{(2)}\theta_{1} + \cdots + x_{n}^{(2)}\theta_{n})\\ 
+
+              \vdots\\
+             g(x_{0}^{(m)}\theta_{0} + x_{1}^{(m)}\theta_{1} + \cdots + 
+x_{n}^{(m)}\theta_{n})\\ 
+              \end{bmatrix}">
+            </div>
+          
+          <h3>step2. cost function</h3>
+          <img src="./static/img/ai/supervised learning/logistic-step2.svg" alt="">
+          <button id="button-logistic-step2-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
+          <div id="div-logistic-step2-matrix" class="disp-none border-basic size-auto pad-10">    
+            <img src="./static/img/ai/supervised learning/logistic-step2-matrix0.svg" alt="J(\theta)=\frac{1}{m}(-y^{T}log(h)-(1-y)^{T}log(1-h))"><br>
+            <div class="scroll">
+              <img src="./static/img/ai/supervised learning/logistic-step2-matrix1.svg" alt="J(\theta)=\frac{1}{m}\cdot
+              -
+              \begin{bmatrix}
+              y^{(1)}
+              &&
+              y^{(2)}
+              &&
+              \cdots
+              &&
+              y^{(m)}
+              \end{bmatrix}
+              \begin{bmatrix}
+                            log(g(\theta_{0}x_{0}^{(1)} + \theta_{1}x_{1}^{(1)} +
+               \cdots + \theta_{n}x_{n}^{(1)}))\\ 
+              
+                            log(g(\theta_{0}x_{0}^{(2)} + \theta_{1}x_{1}^{(2)} + \cdots + \theta_{n}x_{n}^{(2)}))\\ 
+              
+                            \vdots\\
+                           log(g(\theta_{0}x_{0}^{(m)} + \theta_{1}x_{1}^{(m)} + \cdots + 
+              \theta_{n}x_{n}^{(m)}))\\ 
+                            \end{bmatrix}
+              -\begin{bmatrix}
+              1-y^{(1)}
+              &&
+              1-y^{(2)}
+              &&
+              \cdots
+              &&
+              1-y^{(m)}
+              \end{bmatrix}
+              \begin{bmatrix}
+                            log(1-g(\theta_{0}x_{0}^{(1)} + \theta_{1}x_{1}^{(1)} +
+               \cdots + \theta_{n}x_{n}^{(1)}))\\ 
+              
+                            log(1-g(\theta_{0}x_{0}^{(2)} + \theta_{1}x_{1}^{(2)} + \cdots + \theta_{n}x_{n}^{(2)}))\\ 
+              
+                            \vdots\\
+                           log(1-g(\theta_{0}x_{0}^{(m)} + \theta_{1}x_{1}^{(m)} + \cdots + 
+              \theta_{n}x_{n}^{(m)}))\\ 
+                            \end{bmatrix}">
+                          </div><br>
+                            <div class="scroll"><img src="./static/img/ai/supervised learning/logistic-step2-matrix2.svg" alt="J(\theta)=-\frac{1}{m}[
+                              y^{(1)}
+                              log(g(\theta_{0}x_{0}^{(1)} + \theta_{1}x_{1}^{(1)} + \cdots + \theta_{n}x_{n}^{(1)}))+
+                              y^{(2)}
+                              log(g(\theta_{0}x_{0}^{(2)} + \theta_{1}x_{1}^{(2)} + \cdots + \theta_{n}x_{n}^{(2)}))+
+                              \cdots
+                              +
+                              y^{(m)}
+                              log(g(\theta_{0}x_{0}^{(m)} + \theta_{1}x_{1}^{(m)} + \cdots + \theta_{n}x_{n}^{(m)}))+
+                              (1-y^{(1)})
+                              log(1-g(\theta_{0}x_{0}^{(1)} + \theta_{1}x_{1}^{(1)} + \cdots + \theta_{n}x_{n}^{(m)}))+
+                              (1-y^{(2)})
+                              log(1-g(\theta_{0}x_{0}^{(2)} + \theta_{1}x_{1}^{(2)} + \cdots + \theta_{n}x_{n}^{(2)}))+
+                              \cdots+
+                              (1-y^{(m)})
+                              log(1-g(\theta_{0}x_{0}^{(m)} + \theta_{1}x_{1}^{(m)} + \cdots + \theta_{n}x_{n}^{(m)}))
+                              ]"></div>
+
+          </div>
+
+          <h3>step3. minimize costfuction</h3>
+          <img class="equa_size-partial"
+            src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function1.svg"
+            alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}J(\theta)"><br>
+            <button id="button-logistic-step3-proof" class="disp-block margin-b10">증명···</button>
+            <div id="div-logistic-step3-proof" class="disp-none border-basic pad-10">
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof0.svg" alt="\theta_{j}:=\theta_{j}-\alpha
+                \frac{\partial}{\partial\theta_{j}}
+                \frac{-1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)})]">
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof1.svg" alt="
+                \frac{\partial}{\partial\theta_{j}}
+                \frac{-1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)})]">
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof2.svg" alt="
+                =
+                -\frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}\frac{\partial}{\partial\theta_{j}}log(h_\theta(x^{(i)}))+
+                (1-y^{(i)})\frac{\partial}{\partial\theta_{j}}log(1-h_\theta(x^{(i)})]">
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof3.svg" alt="
+                =
+                -\frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                \frac{\frac{\partial}{\partial\theta_{j}}h_\theta(x^{(i)})}{h_\theta(x^{(i)})ln10}+
+                (1-y^{(i)})
+                \frac{\frac{\partial}{\partial\theta_{j}}(1-h_\theta(x^{(i)}))}{1-h_\theta(x^{(i)})ln10}]">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof4.svg" alt="
+                =
+                -
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                \frac{y^{(i)}\frac{\partial}{\partial\theta_{j}}\sigma(\theta^{T}x^{(i)})}
+                {h_\theta(x^{(i)})}+
+                \frac{(1-y^{(i)})\frac{\partial}{\partial\theta_{j}}(1-\sigma(\theta^{T}x^{(i)}))}
+                {1-h_\theta(x^{(i)})}]">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof5.svg" alt="=
+                -
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                      \frac{y^{(i)}\sigma(\theta^{T}x^{(i)})
+                (1-\sigma(\theta^{T}x^{(i)}))
+                \frac{\partial}{\partial \theta_{j}}\theta^{T}x^{(i)}}
+                                {h_\theta(x^{(i)})}+
+
+                \frac{-(1-y^{(i)})
+                \sigma(\theta^{T}x^{(i)})
+                (1-\sigma(\theta^{T}x^{(i)})
+                \frac{\partial}{\partial\theta_{j}}
+                \theta^{T}x^{(i)}}
+                {1-h_\theta(x^{(i)})}]">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof6.svg" alt="=
+                -
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                \frac{y^{(i)}
+                h_{\theta}(x^{(i)})
+                (1-h_{\theta}(x^{(i)}))
+                \frac{\partial}{\partial \theta_{j}}\theta^{T}x^{(i)}}
+                                {h_\theta(x^{(i)})}+
+                
+                 \frac{-(1-y^{(i)})
+                h_{\theta}(x^{(i)})
+                (1-h_{\theta}(x^{(i)}))
+                \frac{\partial}{\partial\theta_{j}}
+                \theta^{T}x^{(i)}}
+                {1-h_\theta(x^{(i)})}]">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof7.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                
+                (1-h_{\theta}(x^{(i)}))
+x_{j}^{(i)}-
+                (1-y^{(i)})h_{\theta}(x^{(i)})x_{j}^{(i)}]
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof8.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                (1-h_{\theta}(x^{(i)}))
+                -
+                (1-y^{(i)})h_{\theta}(x^{(i)})]x_{j}^{(i)}
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof9.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                -y^{(i)}h_{\theta}(x^{(i)})
+                -
+                h_{\theta}(x^{(i)})+
+                y^{(i)}h_{\theta}(x^{(i)})]x_{j}^{(i)}
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof10.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                -
+                h_{\theta}(x^{(i)})
+                ]x_{j}^{(i)}
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="./static/img/ai/supervised learning/logistic-step3-proof11.svg" alt="=\frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                h_{\theta}(x^{(i)}-y^{(i)})
+                ]x_{j}^{(i)}
+                "><br>
+                ln10은 상수이므로 α에 녹이는 것이 가능하다.
+              </div>
+
+            </div>
+            <img class="equa_size-sigma"
+            src="./static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3.svg"
+            alt="\theta _{j}:= \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{j}^{(i)}">
+
+          <h2>3. neural network</h2>
+          <p>
+            neural network란 우리의 뇌가 정보를 주고 받는 방식을 흉내내서 만든 머신러닝 기술이다.
+            neural network를 이용하면 여러 문제들을 해결하는 것이 가능한데, 그 중 대표적인 것이 XOR문제를 풀 수 있게 된다.
+
+          </p>
+          <img class="image-center" src="./static/img/ai/supervised learning/neural_network-basic.png" alt="neural_network-basic">
+          <p>
+            그럼 이 상황을 수식을 이용해서 구체적으로 표현해보자.
+          </p>
+          <div class="disp-flex scroll">
+            <div class="pad-20 border-r">
+              <img class="equa_square" src="./static/img/ai/supervised learning/nueral-step1-1.1.svg" alt="a_{1}^{(2)}=g(\Theta_{10}^{(1)}x_{0}+\Theta_{11}^{(1)}x_{1}+\Theta_{12}^{(1)}x_{2})"><br>
+              <img class="equa_square" src="./static/img/ai/supervised learning/nueral-step1-1.2.svg" alt="a_{2}^{(2)}=g(\Theta_{20}^{(1)}x_{0}+\Theta_{21}^{(1)}x_{1}+\Theta_{22}^{(1)}x_{2})"><br>
+              <img class="equa_square" src="./static/img/ai/supervised learning/nueral-step1-1.3.svg" alt="a_{3}^{(2)}=g(\Theta_{30}^{(1)}x_{0}+\Theta_{31}^{(1)}x_{1}+\Theta_{32}^{(1)}x_{2})"><br>
+              <img class="equa_square" src="./static/img/ai/supervised learning/nueral-step1-1.4.svg" alt="a_{4}^{(2)}=g(\Theta_{40}^{(1)}x_{0}+\Theta_{41}^{(1)}x_{1}+\Theta_{42}^{(1)}x_{2})">
+            </div>
+            <div class="pad-20" >
+              <br>
+              <img class="equa_square" src="./static/img/ai/supervised learning/nueral-step1-2.1.svg" alt="a_{1}^{(3)}=g
+              (\Theta_{10}^{(2)}a_{0}^{(2)}
+              +\Theta_{11}^{(2)}a_{1}^{(2)}
+              +\Theta_{12}^{(2)}a_{2}^{(2)}
+              +\Theta_{13}^{(2)}a_{3}^{(2)}
+              +\Theta_{14}^{(2)}a_{4}^{(2)}
+              )">
+              <img class="equa_square" src="./static/img/ai/supervised learning/nueral-step1-2.2.svg" alt="a_{2}^{(3)}=g
+              (\Theta_{20}^{(2)}a_{0}^{(2)}
+              +\Theta_{21}^{(2)}a_{1}^{(2)}
+              +\Theta_{22}^{(2)}a_{2}^{(2)}
+              +\Theta_{23}^{(2)}a_{3}^{(2)}
+              +\Theta_{24}^{(2)}a_{4}^{(2)}
+              )">
+            </div>
+          </div>
+          <h3>step1. hypothesis</h3>
+          <img class="image-center" src="./static/img/ai/supervised learning/neural_network-step3-image.png" alt="neural_network-step3-image.png">
+          <div class="disp-flex scroll">
+            <div class="pad-20 border-r">
+              <img class="equa_size-6" src="./static/img/ai/supervised learning/nueral-step3-1.svg" alt="a_{k}=\frac{1}{e^{-(\Theta_{k0}
+              +\Theta_{k1}x_{1}
+              +\Theta_{k2}x_{2}
+              +\cdots
+              +\Theta_{kj}x_{j}
+              +\cdots+
+              +\Theta_{kn}x_{n})}}">
+            </div>
+            <div class="pad-20">
+              <img class="equa_size-6" src="./static/img/ai/supervised learning/nueral-step3-2.svg" alt="b_{l}=\frac{1}{e^{-(\Theta_{l0}
+              +\Theta_{l1}a_{1}
+              +\Theta_{l2}a_{2}
+              +\cdots
+              +\Theta_{lk}a_{k}
+              +\cdots+
+              +\Theta_{lo}a_{n})}}">
+            </div>
+          </div>
+          <p>
+            그래서 
+          </p>
+
+          <h3>step2. cost function</h3>
+          <p>
+            cost function은 linear regression에서 사용했던 제곱법을 이용할 것이다.
+          <p>
+          <img src="./static/img/ai/supervised learning/neural-step2.svg" alt="J(\Theta)=\frac{1}{2m}\sum_{i=1}^{m}\sum_{l=1}^{p}(b_{l}^{(i)}-y_{l}^{(i)})^2">
+            
+          <h3>step3. minimize costfuction</h3>
+          <p>
+            cost function을 최소화하기 위해 cost function을 미분하는데,
+            그 미분을 하는 대상인 cost function이 여러 층을 지나가면서, 함수가 또 다른 함수를 계속 만나게되서 
+            식이 복잡해지는 것이다. 즉, cost function은 합성함수가 될 수 밖에 없고,
+            우리는 <strong>합성함수 미분을 하는 것</strong>이다.
+            합성함수를 미분하는 과정을 보면 hidden layer와 output layer 사이에서의 미분을 통해  Θ를 업데이트하고,
+            다음 input layer와 hidden layer 사이에서의 미분을 통해 Θ를 업데이트 하는 것이다.
+            이 모습이 마치 output layer에서 input layer까지 차근차근 반대 방향으로 미분해나가는 모습이라서
+            backpropagation이라는 이름이 붙은 것이다.
+          </p>
+          <img src="./static/img/ai/supervised learning/neural-step3.svg" alt="\Theta_{kj}:=\Theta_{kj}-\alpha\frac{\partial}{\partial\Theta_{kj}}J(\Theta)">
+          <button id="button-neural-step3-range" class="disp-block margin-b10">···</button>
+            <div id="div-neural-step3-range" class="disp-none border-basic size-w7 pad-10">
+              <img src="./static/img/ai/supervised learning/neural-step3-1.svg" class="scroll" alt="\frac{\partial}{\partial\Theta_{kj}}J(\Theta)=
+              \frac{\partial J(\Theta)}{\partial b_{l}^{(i)}}
+              \cdot
+              \frac{\partial b_{l}^{(i)}}{\partial z_{l}^{(i)}}
+              \cdot
+              \frac{\partial z_{l}^{(i)}}{\partial \Theta_{lk}}
+              \cdot
+              \frac{\partial \Theta_{lk}}{\partial z_{l}^{(i)}}
+              \cdot
+              \frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}
+              \cdot
+              \frac{\partial a_{k}^{(i)}}{\partial z_{k}^{(i)}}
+              \cdot
+              \frac{\partial z_{k}^{(i)}}{\partial \Theta_{kj}}
+              \cdot"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_1.svg" alt="\frac{\partial J(\Theta)}{\partial b_{l}^{(i)}}=\frac{1}{m}(b_{i}^{(i)}-y_{l}^{(i)})"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_2.svg" alt="\frac{\partial b_{l}^{(i)}}{\partial z_{l}^{(i)}}=b_{l}^{(i)}(1-b_{l}^{(i)})"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_3.svg" alt="\frac{\partial z_{l}^{(i)}}{\partial \Theta_{lk}}=a_{k}^{(i)}"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_4.svg" alt="\frac{\partial \Theta_{lk}}{\partial z_{l}^{(i)}} = 1"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_5.svg" alt="   \frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}=\Theta_{lk}^{(i)}"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_6.svg" alt="\frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}=a_{k}^{(i)}(1-a_{k}^{(i)})"><br>
+              <img src="./static/img/ai/supervised learning/neural-step3-1_7.svg" alt="\frac{\partial z_{k}^{(i)}}{\partial \Theta_{kj}}=x_{j}^{(i)}"><br>
+            </div>
+              <img src="./static/img/ai/supervised learning/neural-step3-2.svg" alt="\Theta_{kj}:=\Theta_{kj}-\alpha\frac{1}{m}\sum_{i=1}^{m}x_{j}^{(i)}
+              a_{k}^{(i)}
+              (1-a_{k}^{(i)})
+              \sum_{l=1}^{p}
+              \Theta_{lk}b_{l}^{(i)}
+              (1-b_{l}^{(i)})
+              (y_{l}^{(i)}-b_{l}^{(i)})">
+
+          
+
+          <h1>Ⅱ. UNSUPERVISED learning</h1>
+
+          <h1>Ⅲ. REINFORCEMENT learning</h1>
+          <br><br><br><br><br><br><br><br><br><br>
+
+
+a
+        </div>
+      </div>
+
+    </main>
+
+
+    <footer>
+      <div class="footer">
+        <div class="heart_button">
+          <a href="#">
+            <img src="./static/img/base/heart.svg" alt="하트 버튼">
+          </a>
+        </div>
+        <div class="comment_button">
+          <a href="#">
+            <img src="./static/img/base/comment.svg" alt="댓글 버튼">
+          </a>
+        </div>
+        <div class="share_button">
+          <a href="#">
+            <img src="./static/img/base/share.svg" alt="공유 버튼">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>

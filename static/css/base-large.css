@@ -1,0 +1,447 @@
+/* CSS 기본 설정 정하기 - 데스크탑 기준 */
+/* TAG 관련 기본 설정 (a, body, h, p) */
+/* CLASS 관련 기본 설정(border ,button, display, equation_size, image, location, margin, padding, scroll, size, title) */
+/* ID 관련 기본 설정 */
+/* 수식관련 css 이용법
+
+1. img 태그(수식)의 높이를 class로 지정해주기
+2. img 태그를 div태그로 감싸고, scroll 기능 넣어서 화면 넘치면 스크롤 되게 해주기. 가급적 감싸자
+3. img 태그의 alt 속성에는 해당 수식의 latex를 넣어서 언제든지 수정가능하게 하기
+
+4. 토글 버튼에는 margin-b10을 해줘야 아래쪽에 여유가 생겨서 보기 좋다
+5. 토글 버튼에는 js설정을 잘 해주자.
+
+6. 토글해서 나오는 div 태그에는 pad-10을 해주어야 수식 여러줄이 여유있어 보인다
+7. 토글해서 나오는 div 태그에는 'size-숫자 or auto'를 데스크탑과 모바일에 각각 사이즈가 적용된다.
+8. 토글해서 나오는 div 태그에는 border-basic을 해줘야 테두리가 생긴다.
+9. 토글해서 나오는 div 태그에는 disp-none을 해줘야 처음 로드될 때 안 보인다.
+*/
+
+/* TAG 관련 기본 설정 */
+/* a 태그 */
+a:link {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8D8D8D;
+    text-decoration: none;
+}
+
+/* body 태그 */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
+    font-size: 14px; /* 기본 글자 크기 */
+    line-height: 2;  /* 기본 줄 높이  */
+    color: #2d2d2d;
+}
+
+/* h 태그 */
+h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+h3{
+    font-size: 23px;
+    font-weight: 400;
+}
+h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+h5{
+    font-size: 21px;
+    font-weight: 400;
+}
+h6{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* p 태그 */
+p{
+    text-indent: 5px; /*들여쓰기 기본 설정 */
+}
+/* strong 태그 */
+strong{
+    font-weight: 400;
+}
+
+/* CLASS 관련 기본 설정 */
+/* border 관련 */
+.border-basic{
+    border: 1px solid #f2f2f2;
+}
+.border-r{
+    border-right: 1px solid #f2f2f2;
+}
+
+/* button 관련 */
+
+/* display 관련 */
+.disp-block{
+    display: block;
+}
+.disp-flex{
+    display: flex;
+}
+.disp-none{
+    display: none;
+}
+/* display 관련 */
+.disp-block{
+    display: block;
+}
+.disp-inline{
+    display: inline;
+}
+.disp-inblock{
+    display: inline-block;
+}
+.disp-flex{
+    display: flex;
+}
+
+/* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
+/* 우선순위 sigma > partial > frac */
+.equa_size{
+    height: 20px;
+    margin: 5px;
+}
+.equa_square{        /* 제곱 */
+    height: 30px;
+    margin: 5px;
+}
+.equa_size-frac{    /* 분수 */
+    height: 35px;
+    margin: 5px;
+}
+.equa_size-partial{ /* 편미분 */
+    height: 40px;
+    margin: 5px;
+}
+.equa_size-sigma{   /* 시그마 */
+    height: 45px;
+    margin: 5px;
+}
+.equa_size-matrix1{
+    height: 25px;
+    margin: 5px;
+}
+.equa_size-matrix2{
+    height: 50px;
+    margin: 5px;
+}
+.equa_size-matrix3{
+    height: 75px;
+    margin: 5px;
+}
+.equa_size-matrix4{
+    height: 100px;
+    margin: 5px;
+}
+.equa_size-matrix5{
+    height: 125px
+    margin: 5px;
+}
+/* '.equa_size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+.equa_size-5{
+    height: 50px;
+    margin: 5px;
+}
+.equa_size-6{
+    height: 60px;
+    margin: 5px;
+}
+.equa_size-7{
+    height: 70px;
+    margin: 5px;
+}
+.equa_size-8{
+    height: 80px;
+    margin: 5px;
+}
+.equa_size-9{
+    height: 90px;
+    margin: 5px;
+}
+.equa_size-10{
+    height: 100px;
+    margin: 5px;
+}
+
+
+/* image 관련 */
+.image-center{
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    padding: 50px;
+}
+
+/* margin 관련 */
+.margin-10{
+    margin: 10px;
+}
+.margin-20{
+    margin: 20px;
+}
+.margin-30{
+    margin: 30px;
+}
+.margin-40{
+    margin: 40px;
+}
+.margin-50{
+    margin: 50px;
+}
+
+.margin-l10{
+    margin-left: 10px;
+}
+.margin-l20{
+    margin-left: 30px;
+}
+.margin-l30{
+    margin-left: 30px;
+}
+.margin-l40{
+    margin-left: 40px;
+}
+.margin-l50{
+    margin-left: 50px;
+}
+.margin-l60{
+    margin-left: 60px;
+}
+.margin-l70{
+    margin-left: 70px;
+}
+.margin-l80{
+    margin-left: 80px;
+}
+.margin-l90{
+    margin-left: 90px;
+}
+.margin-l100{
+    margin-left: 100px;
+}
+
+.margin-b10{
+    margin-bottom: 10px;
+}
+.margin-b20{
+    margin-bottom: 20px;
+}
+.margin-b30{
+    margin-bottom: 30px;
+}
+.margin-b40{
+    margin-bottom: 40px;
+}
+.margin-b50{
+    margin-bottom: 50px;
+}
+.margin-b60{
+    margin-bottom: 60px;
+}
+.margin-b70{
+    margin-bottom: 80px;
+}
+.margin-b90{
+    margin-bottom: 90px;
+}
+.margin-b100{
+    margin-bottom: 100px;
+}
+/* padding 관련 */
+.pad-5{
+    padding: 5px;
+}
+.pad-10{
+    padding: 10px;
+}
+.pad-15{
+    padding: 15px;
+}
+.pad-20{
+    padding: 20px;
+}
+.pad-25{
+    padding: 25px;
+}
+.pad-30{
+    padding: 30px;
+}
+.pad-35{
+    padding: 35px;
+}
+.pad-40{
+    padding: 40px;
+}
+.pad-45{
+    padding: 45px;
+}
+.pad-50{
+    padding: 50px;
+}
+
+
+
+
+/* size 관련 */
+/* '.size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+
+.size-1{
+    width: 100px;
+}
+.size-2{
+    width: 200px;
+}
+.size-3{
+    width: 300px;
+}
+.size-4{
+    width: 400px;
+}
+.size-5{
+    width: 500px;
+}
+.size-6{
+    width: 600px;
+}
+.size-7{
+    width: 700px;
+}
+.size-8{
+    width: 800px;
+}
+.size-9{
+    width: 900px;
+}
+.size-10{
+    width: 1000px;
+}
+.size-auto{ /* 태그이 속성이 display=block이면 화면의 가로 최대치에 맞춰줌 */
+    width: auto;
+}
+
+.size-w1{
+    width: 100px;
+}
+.size-w2{
+    width: 200px;
+}
+.size-w3{
+    width: 300px;
+}
+.size-w4{
+    width: 400px;
+}
+.size-w5{
+    width: 500px;
+}
+.size-w6{
+    width: 600px;
+}
+.size-w7{
+    width: 700px;
+}
+.size-w8{
+    width: 800px;
+}
+.size-w9{
+    width: 900px;
+}
+.size-w10{
+    width: 1000px;
+}
+
+.size-h1{
+    height: 100px;
+}
+.size-h2{
+    height: 200px;
+}
+.size-h3{
+    height: 300px;
+}
+.size-h4{
+    height: 400px;
+}
+.size-h5{
+    height: 500px;
+}
+.size-h6{
+    height: 600px;
+}
+.size-h7{
+    height: 700px;
+}
+.size-h8{
+    height: 800px;
+}
+.size-h9{
+    height: 900px;
+}
+.size-h10{
+    height: 1000px;
+}
+
+/* scroll 관련 */
+.scroll{
+    overflow: auto;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+  }
+  
+.scroll::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+.scroll::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+
+/* title 관련 */
+.first_title>li {
+    font-size: 14px;
+}
+
+.second_title>li {
+    font-size: 12px;
+    text-indent: 5px;
+}
+
+.third_title>li {
+    font-size: 10px;
+    text-indent: 10px;
+}
+
+.fourth_title>li {
+    font-size: 8px;
+    text-indent: 15px;
+}
+
+.fifth>li {
+    font-size: 8px;
+    text-indent: 20px;
+}
