@@ -86,6 +86,22 @@ h6{
     margin: 5px;
 }
 /* '.equa_size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+.equa_size-1{
+    height: 20px;
+    margin: 5px;
+}
+.equa_size-2{
+    height: 40px;
+    margin: 5px;
+}
+.equa_size-3{
+    height: 60px;
+    margin: 5px;
+}
+.equa_size-4{
+    height: 80px;
+    margin: 5px;
+}
 .equa_size-5{
     height: 100px;
     margin: 5px;
@@ -140,6 +156,37 @@ h6{
 '.size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 
 데스크탑에서 600px를 넘어가면 모바일에선 auto으로 display=block이니까 최대치를 잡아주자. 그러고 scroll 만들면된다.
 */
+
+.size-h1{
+    height: 100px;
+}
+.size-h2{
+    height: 200px;
+}
+.size-h3{
+    height: 300px;
+}
+.size-h4{
+    height: 400px;
+}
+.size-h5{
+    height: 500px;
+}
+.size-h6{
+    height: 600px;
+}
+.size-h7{
+    height: 700px;
+}
+.size-h8{
+    height: 800px;
+}
+.size-h9{
+    height: 900px;
+}
+.size-h10{
+    height: 1000px;
+}
 
 .size-1{
     width: auto;
