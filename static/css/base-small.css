@@ -90,6 +90,10 @@ h6{
     height: 35px;
     margin: 5px;
 }
+.equa_size-1_2{
+    height: 120px;
+    margin: 5px;
+}
 .equa_size-1_5{
     height: 180px;
     margin: 5px;
@@ -148,6 +152,15 @@ h6{
 }
 .equa_size-15{
     height: 460px;
+    margin: 5px;
+}
+
+.equa_size-s1{
+    height: 35px;
+    margin: 5px;
+}
+.equa_size-s2{
+    height: 40px;
     margin: 5px;
 }
 

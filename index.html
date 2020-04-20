@@ -468,12 +468,12 @@
               alt="\theta _{n}:= \theta_{n} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{n}^{(i)}">
             </div>
             <button id="button-linear-step3-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
-            <div id="div-linear-step3-matrix" class="disp-none border-basic size-auto pad-10">    
+            <div id="div-linear-step3-matrix" class="disp-none border-basic size-auto pad-10";">    
               <div class="scroll">
                 <img class="equa_size" src="./static/img/ai/supervised learning/linear-step3-matrix0.svg" alt="\theta:=\theta-\alpha\bigtriangledown J(\theta)">
               </div>
               <div class="scroll">
-                <img class="equa_size-30" src="./static/img/ai/supervised learning/linear-step3-matrix1.svg" alt="\bigtriangledown J(\theta)=
+                <img class="equa_size-5" src="./static/img/ai/supervised learning/linear-step3-matrix1.svg" alt="\bigtriangledown J(\theta)=
                 \begin{bmatrix}
                 \frac{\partial J(\theta)}{\partial \theta_{0}}\\
                 \frac{\partial J(\theta)}{\partial \theta_{0}}\\
@@ -483,14 +483,14 @@
                 ">
               </div>
               <div class="scroll">
-                <img class="equa_size-5" src="./static/img/ai/supervised learning/linear-step3-matrix2.svg" alt="\frac{\partial J(\theta)}{\partial \theta_{j}}=\frac{1}{m}\vec{x_{j}}(X\theta-\vec{y})
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/linear-step3-matrix2.svg" alt="\frac{\partial J(\theta)}{\partial \theta_{j}}=\frac{1}{m}\vec{x_{j}}(X\theta-\vec{y})
                 ">
               </div>
               <div class="scroll">
-                <img class="equa_size-12" src="./static/img/ai/supervised learning/linear-step3-matrix3.svg" alt="">
+                <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/linear-step3-matrix3.svg" alt="">
               </div>
               <div class="scroll">
-                <img class="equa_size-3" src="./static/img/ai/supervised learning/linear-step3-matrix4.svg" alt="=\frac{1}{m}\begin{bmatrix}
+                <img class="equa_size-frac" src="./static/img/ai/supervised learning/linear-step3-matrix4.svg" alt="=\frac{1}{m}\begin{bmatrix}
                 x_{j}^{(1)}(x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)})+
                 x_{j}^{(2)}(x_{0}^{(2)}\theta_{0}+x_{2}^{(1)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)})+
                 \cdots+
@@ -498,7 +498,7 @@
                 \end{bmatrix}">
               </div>
               <div class="scroll">
-                <img class="equa_size-15" src="./static/img/ai/supervised learning/linear-step3-matrix5.svg" alt="\bigtriangledown J(\theta)=
+                <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/linear-step3-matrix5.svg" alt="\bigtriangledown J(\theta)=
                 \begin{bmatrix}
                 \frac{\partial J(\theta)}{\partial \theta_{0}}\\
                 \frac{\partial J(\theta)}{\partial \theta_{0}}\\
@@ -521,7 +521,7 @@ x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}
 \end{bmatrix}">
               </div>
               <div class="scroll">
-                <img class="equa_size-15" src="./static/img/ai/supervised learning/linear-step3-matrix6.svg" alt="=\frac{1}{m}
+                <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/linear-step3-matrix6.svg" alt="=\frac{1}{m}
                 \begin{bmatrix}
                 x_{0}^{(1)}
                 (x_{0}^{(1)}\theta_{0}+
@@ -587,7 +587,7 @@ x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}
                 \end{bmatrix}">
               </div>
               <div class="scroll">
-                <img class="equa_size-15" src="./static/img/ai/supervised learning/linear-step3-matrix7.svg" alt="\theta:=\theta-\frac{\alpha}{m}X^{T}(X\theta-\vec{y})">
+                <img class="equa_size" src="./static/img/ai/supervised learning/linear-step3-matrix7.svg" alt="\theta:=\theta-\frac{\alpha}{m}X^{T}(X\theta-\vec{y})">
               </div>
             </div>
             <p>
@@ -604,14 +604,14 @@ x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}
           </p>
           <h3>step1. hypothesis</h3>
           
-          <img class="equa_size-1" src="./static/img/ai/supervised learning/logistic-step1.svg" alt="h_{\theta}(x)=g(\theta_{0}+\theta_{1}x_{1}+\theta_{2}x_{2}+\cdots+\theta_{n}x_{n})"><br>
-          <img class="equa_size-1_5" src="./static/img/ai/supervised learning/logistic-function.svg" alt="g(z)=\frac{1}{1+e^{-z}}">
+          <img class="equa_size" src="./static/img/ai/supervised learning/logistic-step1.svg" alt="h_{\theta}(x)=g(\theta_{0}+\theta_{1}x_{1}+\theta_{2}x_{2}+\cdots+\theta_{n}x_{n})"><br>
+          <img class="equa_size-frac" src="./static/img/ai/supervised learning/logistic-function.svg" alt="g(z)=\frac{1}{1+e^{-z}}">
           <p>
 
           </p>
           <button id="button-logistic-step1-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
             <div id="div-logistic-step1-matrix" class="disp-none border-basic size-w7 pad-10">    
-              <img src="./static/img/ai/supervised learning/logistic-step1-matrix.svg" alt="h=g(X\theta)=g(\begin{bmatrix}
+              <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/logistic-step1-matrix.svg" alt="h=g(X\theta)=g(\begin{bmatrix}
               x_{0}^{(1)}\theta_{0} + x_{1}^{(1)}\theta_{1} + \cdots + x_{n}^{(1)}\theta_{n}\\ 
               x_{0}^{(2)}\theta_{0} + x_{1}^{(2)}\theta_{1} + \cdots + x_{n}^{(2)}\theta_{n}\\ 
               \vdots\\
@@ -630,12 +630,12 @@ x_{n}^{(m)}\theta_{n})\\
             </div>
           
           <h3>step2. cost function</h3>
-          <img src="./static/img/ai/supervised learning/logistic-step2.svg" alt="">
+          <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step2.svg" alt="">
           <button id="button-logistic-step2-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
           <div id="div-logistic-step2-matrix" class="disp-none border-basic size-auto pad-10">    
-            <img src="./static/img/ai/supervised learning/logistic-step2-matrix0.svg" alt="J(\theta)=\frac{1}{m}(-y^{T}log(h)-(1-y)^{T}log(1-h))"><br>
+            <img class="equa_size" src="./static/img/ai/supervised learning/logistic-step2-matrix0.svg" alt="J(\theta)=\frac{1}{m}(-y^{T}log(h)-(1-y)^{T}log(1-h))"><br>
             <div class="scroll">
-              <img src="./static/img/ai/supervised learning/logistic-step2-matrix1.svg" alt="J(\theta)=\frac{1}{m}\cdot
+              <img class="equa_size-matrix4" src="./static/img/ai/supervised learning/logistic-step2-matrix1.svg" alt="J(\theta)=\frac{1}{m}\cdot
               -
               \begin{bmatrix}
               y^{(1)}
@@ -676,7 +676,7 @@ x_{n}^{(m)}\theta_{n})\\
               \theta_{n}x_{n}^{(m)}))\\ 
                             \end{bmatrix}">
                           </div><br>
-                            <div class="scroll"><img src="./static/img/ai/supervised learning/logistic-step2-matrix2.svg" alt="J(\theta)=-\frac{1}{m}[
+                            <div class="scroll"><img class="equa_size" src="./static/img/ai/supervised learning/logistic-step2-matrix2.svg" alt="J(\theta)=-\frac{1}{m}[
                               y^{(1)}
                               log(g(\theta_{0}x_{0}^{(1)} + \theta_{1}x_{1}^{(1)} + \cdots + \theta_{n}x_{n}^{(1)}))+
                               y^{(2)}
@@ -703,21 +703,21 @@ x_{n}^{(m)}\theta_{n})\\
             <button id="button-logistic-step3-proof" class="disp-block margin-b10">증명···</button>
             <div id="div-logistic-step3-proof" class="disp-none border-basic pad-10">
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof0.svg" alt="\theta_{j}:=\theta_{j}-\alpha
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof0.svg" alt="\theta_{j}:=\theta_{j}-\alpha
                 \frac{\partial}{\partial\theta_{j}}
                 \frac{-1}{m}
                 \sum_{i=1}^{m}
                 [y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)})]">
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof1.svg" alt="
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof1.svg" alt="
                 \frac{\partial}{\partial\theta_{j}}
                 \frac{-1}{m}
                 \sum_{i=1}^{m}
                 [y^{(i)}log(h_\theta(x^{(i)}))+(1-y^{(i)})log(1-h_\theta(x^{(i)})]">
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof2.svg" alt="
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof2.svg" alt="
                 =
                 -\frac{1}{m}
                 \sum_{i=1}^{m}
@@ -725,7 +725,7 @@ x_{n}^{(m)}\theta_{n})\\
                 (1-y^{(i)})\frac{\partial}{\partial\theta_{j}}log(1-h_\theta(x^{(i)})]">
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof3.svg" alt="
+                <img class="equa_size-1_2" src="./static/img/ai/supervised learning/logistic-step3-proof3.svg" alt="
                 =
                 -\frac{1}{m}
                 \sum_{i=1}^{m}
@@ -736,7 +736,7 @@ x_{n}^{(m)}\theta_{n})\\
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof4.svg" alt="
+                <img class="equa_size-1_2" src="./static/img/ai/supervised learning/logistic-step3-proof4.svg" alt="
                 =
                 -
                 \frac{1}{ln10}
@@ -750,7 +750,7 @@ x_{n}^{(m)}\theta_{n})\\
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof5.svg" alt="=
+                <img class="equa_size-1_2" src="./static/img/ai/supervised learning/logistic-step3-proof5.svg" alt="=
                 -
                 \frac{1}{ln10}
                 \frac{1}{m}
@@ -770,7 +770,7 @@ x_{n}^{(m)}\theta_{n})\\
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof6.svg" alt="=
+                <img class="equa_size-1_2" src="./static/img/ai/supervised learning/logistic-step3-proof6.svg" alt="=
                 -
                 \frac{1}{ln10}
                 \frac{1}{m}
@@ -791,7 +791,7 @@ x_{n}^{(m)}\theta_{n})\\
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof7.svg" alt="-
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof7.svg" alt="-
                 \frac{1}{ln10}
                 \frac{1}{m}
                 \sum_{i=1}^{m}
@@ -804,7 +804,7 @@ x_{j}^{(i)}-
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof8.svg" alt="-
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof8.svg" alt="-
                 \frac{1}{ln10}
                 \frac{1}{m}
                 \sum_{i=1}^{m}
@@ -816,7 +816,7 @@ x_{j}^{(i)}-
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof9.svg" alt="-
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof9.svg" alt="-
                 \frac{1}{ln10}
                 \frac{1}{m}
                 \sum_{i=1}^{m}
@@ -829,7 +829,7 @@ x_{j}^{(i)}-
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof10.svg" alt="-
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof10.svg" alt="-
                 \frac{1}{ln10}
                 \frac{1}{m}
                 \sum_{i=1}^{m}
@@ -841,7 +841,7 @@ x_{j}^{(i)}-
 
               </div>
               <div class="scroll">
-                <img src="./static/img/ai/supervised learning/logistic-step3-proof11.svg" alt="=\frac{1}{ln10}
+                <img class="equa_size-sigma" src="./static/img/ai/supervised learning/logistic-step3-proof11.svg" alt="=\frac{1}{ln10}
                 \frac{1}{m}
                 \sum_{i=1}^{m}
                 [
@@ -894,7 +894,7 @@ x_{j}^{(i)}-
           <img class="image-center" src="./static/img/ai/supervised learning/neural_network-step3-image.png" alt="neural_network-step3-image.png">
           <div class="disp-flex scroll">
             <div class="pad-20 border-r">
-              <img class="equa_size-6" src="./static/img/ai/supervised learning/nueral-step3-1.svg" alt="a_{k}=\frac{1}{e^{-(\Theta_{k0}
+              <img class="equa_size-frac" src="./static/img/ai/supervised learning/nueral-step3-1.svg" alt="a_{k}=\frac{1}{e^{-(\Theta_{k0}
               +\Theta_{k1}x_{1}
               +\Theta_{k2}x_{2}
               +\cdots
@@ -903,7 +903,7 @@ x_{j}^{(i)}-
               +\Theta_{kn}x_{n})}}">
             </div>
             <div class="pad-20">
-              <img class="equa_size-6" src="./static/img/ai/supervised learning/nueral-step3-2.svg" alt="b_{l}=\frac{1}{e^{-(\Theta_{l0}
+              <img class="equa_size-frac" src="./static/img/ai/supervised learning/nueral-step3-2.svg" alt="b_{l}=\frac{1}{e^{-(\Theta_{l0}
               +\Theta_{l1}a_{1}
               +\Theta_{l2}a_{2}
               +\cdots
@@ -912,15 +912,13 @@ x_{j}^{(i)}-
               +\Theta_{lo}a_{n})}}">
             </div>
           </div>
-          <p>
-            그래서 
-          </p>
+
 
           <h3>step2. cost function</h3>
           <p>
 
           <p>
-          <img src="./static/img/ai/supervised learning/neural-step2.svg" alt="J(\Theta)=\frac{1}{2m}\sum_{i=1}^{m}\sum_{l=1}^{p}(b_{l}^{(i)}-y_{l}^{(i)})^2">
+          <img class="equa_size-sigma" src="./static/img/ai/supervised learning/neural-step2.svg" alt="J(\Theta)=\frac{1}{2m}\sum_{i=1}^{m}\sum_{l=1}^{p}(b_{l}^{(i)}-y_{l}^{(i)})^2">
             
           <h3>step3. minimize costfuction</h3>
           <p>
@@ -936,19 +934,19 @@ x_{j}^{(i)}-
           
           <div class="scroll"><img class="size-h10" src="./static/img/ai/supervised learning/neural-backpropagation.png" alt="backpropagation image"></div>
           
-          <div class="scroll"><img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-0.svg" alt="\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
+          <div class="scroll"><img class="equa_size-partial" class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-0.svg" alt="\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
             (a^{(L)}-y)\theta^{(L-1)}a^{(L-1)}(1-a^{(L-1)})a^{(L-2)}"></div>
-            <div class="scroll"><img class="size-3" src="./static/img/ai/supervised learning/neural-step3-proof-0_1.svg" alt="
+            <div class="scroll"><img class="equa_size" src="./static/img/ai/supervised learning/neural-step3-proof-0_1.svg" alt="
               = \delta^{(L)}\theta^{(L-1)}a^{(L-1)}(1-a^{(L-1)})a^{(L-2)}"></div>
-              <div class="scroll"><img class="size-3" src="./static/img/ai/supervised learning/neural-step3-proof-0_2.svg" alt="
+              <div class="scroll"><img class="equa_size" src="./static/img/ai/supervised learning/neural-step3-proof-0_2.svg" alt="
                 \delta^{(L-1)}=\delta^{(L)}\theta^{(L-1)}a^{(L-1)}(1-a^{(L-1)})"></div>
-                <div class="scroll"><img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-0_3.svg" alt="
+                <div class="scroll"><img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-0_3.svg" alt="
                   \frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
                   \delta^{(L-1)} a^{(L-2)}"></div>
             <button id="button-neural-step3-range" class="disp-block margin-b10">···</button>
             <div id="div-neural-step3-range" class="disp-none border-basic size-w7 pad-10">
               <div class="scroll">
-                <img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-1.svg" alt="\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1.svg" alt="\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
                 \frac{\partial J(\theta)}{\partial  a^{(L)}}
                 \cdot
                 \frac{\partial  a^{(L)}}{\partial  z^{(L)}}
@@ -961,29 +959,29 @@ x_{j}^{(i)}-
               </div>
               <div class="disp-flex">
                 <div class="scroll">
-                  <img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-1_1_1.svg" alt="①
+                  <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_1_1.svg" alt="①
                   \:\:\:\frac{\partial J(\theta)}{\partial a^{(L)}}">
                 </div><div>&nbsp&nbsp&nbsp구하기</div>
               </div>
               <div class="scroll">
-                <img class="equa_size-2" src="./static/img/ai/supervised learning/neural-step3-proof-1_1_2.svg" alt="①
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_1_2.svg" alt="①
                 \:\:\:\frac{\partial J(\theta)}{\partial a^{(L)}} = \frac{-y}{a^{(L)}}+\frac{(1-y)}{(1-a^{(L)})}">
               </div>
               <div class="scroll">
-                <img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-1_1_3.svg" alt="\frac{\partial J(\theta)}{\partial a^{(L)}} = \frac{-y}{a^{(L)}}+\frac{(1-y)}{(1-a^{(L)})}">
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_1_3.svg" alt="\frac{\partial J(\theta)}{\partial a^{(L)}} = \frac{-y}{a^{(L)}}+\frac{(1-y)}{(1-a^{(L)})}">
               </div>
               <div class="scroll">
                 <div class="disp-flex">
-                  <img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_1.svg" alt="②
+                  <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_1.svg" alt="②
                   \:\:\:
                    \frac{\partial a^{(L)}}{\partial z^{(L)}}"><div>&nbsp&nbsp&nbsp구하기</div>
                 </div>
               </div>
               <div class="scroll">
-                <img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_2.svg" alt="a^{(L)}=\frac{1}{1+e^{-z^{(L)}}}">
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_2.svg" alt="a^{(L)}=\frac{1}{1+e^{-z^{(L)}}}">
               </div>
               <div class="scroll">
-                <img class="equa_size-6" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_3.svg" alt="\frac{\partial a^{(L)}}{\partial z^{(L)}}=
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_3.svg" alt="\frac{\partial a^{(L)}}{\partial z^{(L)}}=
                 \frac{e^{-z^{(L)}}}{(1+e^{-z^{(L)}})^2}=
                 \frac{1}{(1+e^{-z^{(L)}})}
                 \cdot
@@ -994,7 +992,7 @@ x_{j}^{(i)}-
                 a^{(L)}(1-a^{(L)})">
               </div>
               <div class="scroll">
-                <img class="equa_size-5" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_4.svg" alt="①\times② = \frac{\partial J(\theta)}{\partial  a^{(L)}}
+                <img class="equa_size-partial" src="./static/img/ai/supervised learning/neural-step3-proof-1_2_4.svg" alt="①\times② = \frac{\partial J(\theta)}{\partial  a^{(L)}}
                 \cdot
                 \frac{\partial  a^{(L)}}{\partial  z^{(L)}}
 =
